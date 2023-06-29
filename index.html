@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="firstcontainer">
+        <h1>Student Enrollment Form </h1>
+    </div>
+
+    <div id="container">
+        <div id="main-form">
+            <form class="myform" name="form1">
+          
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="box"><br><br>
+
+                <label for="rollno">Website :</label>
+                <input type="text" id="website" name="website" class="box"><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="box"><br><br>
+
+
+                Gender:
+                <input type="radio" name="gender" value="Male" id="gender" class="gender">Male 
+                <input type="radio" name="gender" value="Female" class="gender">Female 
+                <input type="radio" name="gender" value="Others" class="gender">Others <br><br>
+
+                Skills:
+                <input type="checkbox" name="java" class="skills" value="Java">Java
+                <input type="checkbox" name="Html" class="skills" value="HTML">HTML
+                <input type="checkbox" name="css" class="skills"  value="CSS">CSS<br><br>
+
+                
+
+                <input type="button" value="Enroll Student" name="add" class="btn" onclick="addStudent()">
+                <input type="reset" value="Clear" name="reset" class="btn1">
+
+            </form>
+        </div>
+
+        <div id="enroll-table">
+            <h3>Enrolled Students</h3>
+            <table id="t1">
+                <thead class="t_head">
+                    <tr>
+                        <th class="row">Name</th>
+                        <th class="row">Website</th>
+                        <th class="row">Email</th>
+                        <th class="row">Gender</th>
+                        <th class="row">Skills</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
